@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Media</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/media.css">
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html"><img src="./assets/img/mardigras_80x80.png" alt="Mardi Gras" ></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Media.html">Media</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('./assets/img/mardi_gras_theme2.jpeg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Our Media</h1>
+                            <h2 class="subheading">Come Take A Closer Look At Us</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+           <!-- Post Content-->
+           <div class="row" id="important">
+            <div class="column">
+              <img src="./assets/img/photo_gallery1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="./assets/img/photo_gallery2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="./assets/img/photo_gallery3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="./assets/img/pexels-mali-maeder-335692.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+          </div>
+          
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="./assets/img/photo_gallery1.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="./assets/img/photo_gallery2.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="./assets/img/photo_gallery3.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="./assets/img/pexels-mali-maeder-335692.jpg" style="width:100%">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+              <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="./assets/img/photo_gallery1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Crowded Streets">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./assets/img/photo_gallery2.jpg" style="width:100%" onclick="currentSlide(2)" alt="A Beautifull Corner">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./assets/img/photo_gallery3.jpg" style="width:100%" onclick="currentSlide(3)" alt="A Parade">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./assets/img/pexels-mali-maeder-335692.jpg" style="width:100%" onclick="currentSlide(4)" alt="Masks">
+              </div>
+            </div>
+            <div>
+          </div>
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2 class="section-heading">Photography In Mardi Gras?</h2>
+                        <p> Many photographers from all over the world make their way to Canal Street in New Orleans on Mardi Gras Fat Tuesday. Typically, they stand behind roped off areas and photograph the parades going by. The key to making great imagery at Mardi Gras is to become part of the parade itself.<p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EkIZwXbSh-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <blockquote class="blockquote">“What happens on the float stays on the float.”</blockquote>
+
+
+                        <div class="post-preview">
+                            <a href="https://www.bhphotovideo.com/explora/photography/tips-and-solutions/10-tips-photographing-new-orleans-mardi-gras-night" target="_blank">
+                                <h2 class="post-title">Great Tips For Photography At Night</h2>
+                                <h3 class="post-subtitle">Tips For Photography At Night| bhphotovideo.com</h3>
+                            </a>
+                        </div>
+                        <hr class="my-4" />
+
+                        <h2 class="section-heading">      </h2>
+                        
+
+                        <p style="font-size:large"><strong>If You Want To Join Our Photography Contest Next Year, You Can Use Some Inspiration</strong> <p>
+                        <a href="https://www.instagram.com/mardigrasworld/?hl=en" target="_blank"><img class="img-fluid" src="./assets/img/photography.png" alt="new orleans mardi gras instagram" /></a>
+                        <span class="caption text-muted">new orleans mardi gras instagram</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/nolacitycouncil">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/MardiGrasNewOrleans/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Mahdy's Website 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/media.js"></script>
+    </body>
+</html>
